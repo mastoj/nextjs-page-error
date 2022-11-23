@@ -1,11 +1,12 @@
+"use client";
 import React from "react";
 
-type PageProps = {
+export type Props = {
   searchParams: { q: string };
 };
 
-const Page = ({ searchParams }: PageProps) => {
-  return <div>Search</div>;
+const Page = ({ searchParams }: any) => {
+  return <div>Search {searchParams.q}</div>;
 };
 
 export default Page;
